@@ -13,7 +13,7 @@ Scope: local Go cache with typed synthetic HTTP origin, owned policies/refresh/i
 | ADRs | shadows/TTL, replay/live distinction, color streams | PASS |
 | Interview kit | INTERVIEW.md and DRILL.md | PASS |
 | Dependency audit | dependency-scan.log, Go reachability plus Python/npm scans | PASS locally |
-| CI green | exact final head verified by coordinator in TIDAL_CI_VERIFICATION.json | Pending final verification |
+| CI green | [Linux CI evidence](results/linux-ci.json); final head verified by coordinator in TIDAL_CI_VERIFICATION.json | PASS; Linux race/container/browser gates; final head independently verified |
 | No unmeasured claims | README generated from campaign JSON; negative outcomes retained | PASS within explicit measurement scope |
 
 Remaining scope: no hosted service, generic HTTP proxy, original public freshness metadata, byte-based capacity control, isolated tuning effectiveness study, production tail-latency/load measurement, distributed consistency, tenant fairness or Cinder integration. Static origin max-age is a reuse cap, not an invalidation oracle. Adaptive mode loses on multiple traces; no general benefit is claimed.

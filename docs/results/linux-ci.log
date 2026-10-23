@@ -1,0 +1,946 @@
+verify	Set up job	﻿2026-10-23T19:16:22.3316628Z Current runner version: '2.338.0'
+verify	Set up job	2026-10-23T19:16:22.3344395Z ##[group]Runner Image Provisioner
+verify	Set up job	2026-10-23T19:16:22.3345403Z Hosted Compute Agent
+verify	Set up job	2026-10-23T19:16:22.3346006Z Version: 20261012.601
+verify	Set up job	2026-10-23T19:16:22.3346705Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+verify	Set up job	2026-10-23T19:16:22.3347461Z Build Date: 2026-10-12T17:48:21Z
+verify	Set up job	2026-10-23T19:16:22.3348173Z Worker ID: {9f6865f0-717c-46d6-9627-d5659306f109}
+verify	Set up job	2026-10-23T19:16:22.3348957Z Region: centralus
+verify	Set up job	2026-10-23T19:16:22.3349844Z Cloud: Azure
+verify	Set up job	2026-10-23T19:16:22.3350494Z ##[endgroup]
+verify	Set up job	2026-10-23T19:16:22.3352039Z ##[group]Operating System
+verify	Set up job	2026-10-23T19:16:22.3352781Z Ubuntu
+verify	Set up job	2026-10-23T19:16:22.3353444Z 24.04.5
+verify	Set up job	2026-10-23T19:16:22.3354016Z LTS
+verify	Set up job	2026-10-23T19:16:22.3354570Z ##[endgroup]
+verify	Set up job	2026-10-23T19:16:22.3355283Z ##[group]Runner Image
+verify	Set up job	2026-10-23T19:16:22.3355984Z Image: ubuntu-24.04
+verify	Set up job	2026-10-23T19:16:22.3356645Z Version: 20261012.334.1
+verify	Set up job	2026-10-23T19:16:22.3357826Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+verify	Set up job	2026-10-23T19:16:22.3360015Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+verify	Set up job	2026-10-23T19:16:22.3361054Z ##[endgroup]
+verify	Set up job	2026-10-23T19:16:22.3362619Z ##[group]GITHUB_TOKEN Permissions
+verify	Set up job	2026-10-23T19:16:22.3364741Z Contents: read
+verify	Set up job	2026-10-23T19:16:22.3365517Z Metadata: read
+verify	Set up job	2026-10-23T19:16:22.3366116Z ##[endgroup]
+verify	Set up job	2026-10-23T19:16:22.3368182Z Secret source: Actions
+verify	Set up job	2026-10-23T19:16:22.3369209Z Cache mode: write
+verify	Set up job	2026-10-23T19:16:22.3370456Z Prepare workflow directory
+verify	Set up job	2026-10-23T19:16:22.3710033Z Prepare all required actions
+verify	Set up job	2026-10-23T19:16:22.3760566Z Getting action download info
+verify	Set up job	2026-10-23T19:16:22.8756316Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+verify	Set up job	2026-10-23T19:16:22.9872241Z Download action repository 'actions/setup-go@v5' (SHA:40f1582b2485089dde7abd97c1529aa768e1baff)
+verify	Set up job	2026-10-23T19:16:23.4963098Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+verify	Set up job	2026-10-23T19:16:23.5817977Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+verify	Set up job	2026-10-23T19:16:23.6765863Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+verify	Set up job	2026-10-23T19:16:23.9124703Z Complete job name: verify
+verify	Run actions/checkout@v4	﻿2026-10-23T19:16:24.0115238Z ##[group]Run actions/checkout@v4
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0116302Z with:
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0116815Z   repository: rjrddy/tidal
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0124825Z   token: ***
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0125347Z   ssh-strict: true
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0125866Z   ssh-user: git
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0126404Z   persist-credentials: true
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0127020Z   clean: true
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0127548Z   sparse-checkout-cone-mode: true
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0128272Z   fetch-depth: 1
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0128789Z   fetch-tags: false
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0129483Z   show-progress: true
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0130094Z   lfs: false
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0130579Z   submodules: false
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0131153Z   set-safe-directory: true
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0131799Z   allow-unsafe-pr-checkout: false
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.0132795Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1163032Z Syncing repository: rjrddy/tidal
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1166066Z ##[group]Getting Git version info
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1167534Z Working directory is '/home/runner/work/tidal/tidal'
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1170240Z [command]/usr/bin/git version
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1250561Z git version 2.55.0
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1273978Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1290514Z Temporarily overriding HOME='/home/runner/work/_temp/fd4e6a49-b204-41fa-be29-6d7d7f1baa2e' before making global git config changes
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1294505Z Adding repository directory to the temporary git global config as a safe directory
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1297502Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tidal/tidal
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1355450Z Deleting the contents of '/home/runner/work/tidal/tidal'
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1364438Z ##[group]Initializing the repository
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1375593Z [command]/usr/bin/git init /home/runner/work/tidal/tidal
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1641021Z hint: Using 'master' as the name for the initial branch. This default branch name
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1643909Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1646639Z hint: to use in all of your new repositories, which will suppress this warning,
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1648689Z hint: call:
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1649619Z hint:
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1650683Z hint: 	git config --global init.defaultBranch <name>
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1652170Z hint:
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1653503Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1656001Z hint: 'development'. The just-created branch can be renamed via this command:
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1657925Z hint:
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1658707Z hint: 	git branch -m <name>
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1755957Z hint:
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1757682Z hint: Disable this message with "git config set advice.defaultBranchName false"
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1762238Z Initialized empty Git repository in /home/runner/work/tidal/tidal/.git/
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1766322Z [command]/usr/bin/git remote add origin https://github.com/rjrddy/tidal
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1771523Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1773302Z ##[group]Disabling automatic garbage collection
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1775399Z [command]/usr/bin/git config --local gc.auto 0
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1779024Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1780862Z ##[group]Setting up auth
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1782705Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.1805292Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.2213353Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.2252793Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.2478134Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.2515082Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.2740743Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.2783914Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.2793282Z ##[group]Fetching the repository
+verify	Run actions/checkout@v4	2026-10-23T19:16:24.2796118Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a3936445927a77b9474a21a00ffa734e2e8cdad9:refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5121291Z From https://github.com/rjrddy/tidal
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5124422Z  * [new ref]         a3936445927a77b9474a21a00ffa734e2e8cdad9 -> origin/main
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5129825Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5132339Z ##[group]Determining the checkout info
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5135315Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5140538Z [command]/usr/bin/git sparse-checkout disable
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5227790Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5263429Z ##[group]Checking out the ref
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5268382Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5882993Z Switched to a new branch 'main'
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5889188Z branch 'main' set up to track 'origin/main'.
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5895488Z ##[endgroup]
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5938650Z [command]/usr/bin/git log -1 --format=%H
+verify	Run actions/checkout@v4	2026-10-23T19:16:25.5967016Z a3936445927a77b9474a21a00ffa734e2e8cdad9
+verify	Run actions/setup-go@v5	﻿2026-10-23T19:16:25.6291412Z ##[group]Run actions/setup-go@v5
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.6292386Z with:
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.6293427Z   go-version: 1.27.3
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.6294247Z   cache: false
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.6295045Z   check-latest: false
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.6298548Z   token: ***
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.6299534Z ##[endgroup]
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.7758445Z Setup go version spec 1.27.3
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.7770185Z Attempting to download 1.27.3...
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.7891877Z (node:2280) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-go@v5	2026-10-23T19:16:25.7927149Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-go@v5	2026-10-23T19:16:26.5042244Z matching 1.27.3...
+verify	Run actions/setup-go@v5	2026-10-23T19:16:26.5067665Z Acquiring 1.27.3 from https://github.com/actions/go-versions/releases/download/1.27.3-39437817176/go-1.27.3-linux-x64.tar.gz
+verify	Run actions/setup-go@v5	2026-10-23T19:16:27.1479093Z Extracting Go...
+verify	Run actions/setup-go@v5	2026-10-23T19:16:27.1596860Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/6637fd7b-a230-481a-9921-0d9236369387 -f /home/runner/work/_temp/f3dde7b3-742b-49d2-aa02-66e59aaf4b19
+verify	Run actions/setup-go@v5	2026-10-23T19:16:28.8486976Z Successfully extracted go to /home/runner/work/_temp/6637fd7b-a230-481a-9921-0d9236369387
+verify	Run actions/setup-go@v5	2026-10-23T19:16:28.8488080Z Adding to the cache ...
+verify	Run actions/setup-go@v5	2026-10-23T19:16:34.7120969Z Successfully cached go to /opt/hostedtoolcache/go/1.27.3/x64
+verify	Run actions/setup-go@v5	2026-10-23T19:16:34.7125081Z Added go to the path
+verify	Run actions/setup-go@v5	2026-10-23T19:16:34.7127674Z Successfully set up Go version 1.27.3
+verify	Run actions/setup-go@v5	2026-10-23T19:16:34.7364762Z go version go1.27.3 linux/amd64
+verify	Run actions/setup-go@v5	2026-10-23T19:16:34.7365154Z 
+verify	Run actions/setup-go@v5	2026-10-23T19:16:34.7365635Z ##[group]go env
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4350217Z AR='ar'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4350606Z CC='gcc'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4351011Z CGO_CFLAGS='-O2 -g'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4351579Z CGO_CPPFLAGS=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4352111Z CGO_CXXFLAGS='-O2 -g'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4352601Z CGO_ENABLED='1'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4353097Z CGO_FFLAGS='-O2 -g'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4353547Z CGO_LDFLAGS='-O2 -g'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4354033Z CXX='g++'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4354400Z GCCGO='gccgo'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4354926Z GO111MODULE=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4355349Z GOAMD64='v1'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4355736Z GOARCH='amd64'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4356114Z GOAUTH='netrc'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4356510Z GOBIN='/home/runner/go/bin'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4357035Z GOCACHE='/home/runner/.cache/go-build'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4357540Z GOCACHEPROG=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4357969Z GODEBUG=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4358252Z GOENV='/home/runner/.config/go/env'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4358576Z GOEXE=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4358789Z GOEXPERIMENT=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4359003Z GOFIPS140='off'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4359235Z GOFLAGS=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4360354Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build1356192145=/tmp/go-build -gno-record-gcc-switches'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4361124Z GOHOSTARCH='amd64'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4361369Z GOHOSTOS='linux'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4361605Z GOINSECURE=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4361872Z GOMOD='/home/runner/work/tidal/tidal/go.mod'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4362237Z GOMODCACHE='/home/runner/go/pkg/mod'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4362527Z GONOPROXY=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4362745Z GONOSUMDB=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4362959Z GOOS='linux'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4363214Z GOPACKAGESDRIVER=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4363535Z GOPATH='/home/runner/go'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4363903Z GOPRIVATE=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4364237Z GOPROXY='https://proxy.golang.org,direct'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4364612Z GOROOT='/opt/hostedtoolcache/go/1.27.3/x64'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4364932Z GOSUMDB='sum.golang.org'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4365185Z GOTELEMETRY='local'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4365490Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4365821Z GOTMPDIR=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4366040Z GOTOOLCHAIN='auto'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4366395Z GOTOOLDIR='/opt/hostedtoolcache/go/1.27.3/x64/pkg/tool/linux_amd64'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4366782Z GOVCS=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4366992Z GOVERSION='go1.27.3'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4367227Z GOWORK=''
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4367779Z PKG_CONFIG='pkg-config'
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4367939Z 
+verify	Run actions/setup-go@v5	2026-10-23T19:16:35.4368496Z ##[endgroup]
+verify	Run actions/setup-node@v4	﻿2026-10-23T19:16:35.4559596Z ##[group]Run actions/setup-node@v4
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.4559936Z with:
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.4560140Z   node-version: 22
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.4560363Z   always-auth: false
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.4560582Z   check-latest: false
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.4562895Z   token: ***
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.4563110Z ##[endgroup]
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.5967171Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.5972165Z (node:2371) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.5973002Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-node@v4	2026-10-23T19:16:35.5975190Z ##[group]Environment details
+verify	Run actions/setup-node@v4	2026-10-23T19:16:36.0437963Z node: v22.23.3
+verify	Run actions/setup-node@v4	2026-10-23T19:16:36.0438425Z npm: 10.9.9
+verify	Run actions/setup-node@v4	2026-10-23T19:16:36.0438809Z yarn: 1.22.22
+verify	Run actions/setup-node@v4	2026-10-23T19:16:36.0439797Z ##[endgroup]
+verify	Run actions/setup-python@v5	﻿2026-10-23T19:16:36.0596493Z ##[group]Run actions/setup-python@v5
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.0596800Z with:
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.0597043Z   python-version: 3.13
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.0597274Z   check-latest: false
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.0600068Z   token: ***
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.0600343Z   update-environment: true
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.0600592Z   allow-prereleases: false
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.0600819Z   freethreaded: false
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.0601034Z ##[endgroup]
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.1903114Z ##[group]Installed versions
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.2016122Z (node:2404) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.2017576Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.2030103Z Successfully set up CPython (3.13.16)
+verify	Run actions/setup-python@v5	2026-10-23T19:16:36.2050550Z ##[endgroup]
+verify	Run make setup lint test bench scan	﻿2026-10-23T19:16:36.2172517Z ##[group]Run make setup lint test bench scan
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2172918Z ^[[36;1mmake setup lint test bench scan^[[0m
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2570988Z shell: /usr/bin/bash -e {0}
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2571354Z env:
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2571718Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2572280Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2572836Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2573330Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2573818Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2574313Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2574727Z ##[endgroup]
+verify	Run make setup lint test bench scan	2026-10-23T19:16:36.2904533Z python3 -m venv .venv
+verify	Run make setup lint test bench scan	2026-10-23T19:16:40.6166989Z .venv/bin/python -m pip install -r requirements-dev.txt
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.0687299Z Collecting pip==26.2.2 (from -r requirements-dev.txt (line 1))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.1454022Z   Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.6067032Z Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 2))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.6202797Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.6491334Z Collecting pip-audit==2.9.0 (from -r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.6625336Z   Downloading pip_audit-2.9.0-py3-none-any.whl.metadata (27 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.6910329Z Collecting CacheControl>=0.13.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.7041283Z   Downloading cachecontrol-0.14.4-py3-none-any.whl.metadata (3.1 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.7383406Z Collecting cyclonedx-python-lib<10,>=5 (from pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.7518631Z   Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl.metadata (6.5 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.7737630Z Collecting packaging>=23.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.7868692Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.8061168Z Collecting pip-api>=0.0.28 (from pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.8193451Z   Downloading pip_api-0.0.35-py3-none-any.whl.metadata (17 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.8385175Z Collecting pip-requirements-parser>=32.0.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.8515932Z   Downloading pip_requirements_parser-32.0.1-py3-none-any.whl.metadata (9.3 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.8796129Z Collecting requests>=2.31.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.8928971Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.9349189Z Collecting rich>=12.4 (from pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.9481868Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.9672884Z Collecting toml>=0.10 (from pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:41.9805948Z   Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.0063604Z Collecting platformdirs>=4.2.0 (from pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.0197064Z   Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.0404404Z Collecting license-expression<31,>=30 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.0536799Z   Downloading license_expression-30.4.4-py3-none-any.whl.metadata (11 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.0777519Z Collecting packageurl-python<2,>=0.11 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.0909671Z   Downloading packageurl_python-0.17.6-py3-none-any.whl.metadata (5.1 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.1134927Z Collecting py-serializable<3.0.0,>=2.0.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.1269570Z   Downloading py_serializable-2.1.0-py3-none-any.whl.metadata (4.3 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.1456068Z Collecting sortedcontainers<3.0.0,>=2.4.0 (from cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.1588469Z   Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.1803906Z Collecting boolean.py>=4.0 (from license-expression<31,>=30->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.1933701Z   Downloading boolean_py-5.0-py3-none-any.whl.metadata (2.3 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.2120857Z Collecting defusedxml<0.8.0,>=0.7.1 (from py-serializable<3.0.0,>=2.0.0->cyclonedx-python-lib<10,>=5->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.2252165Z   Downloading defusedxml-0.7.1-py2.py3-none-any.whl.metadata (32 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.3209152Z Collecting msgpack<2.0.0,>=0.5.2 (from CacheControl>=0.13.0->CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.3344081Z   Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.3666253Z Collecting filelock>=3.8.0 (from CacheControl[filecache]>=0.13.0->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.3798140Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.4114762Z Collecting pyparsing (from pip-requirements-parser>=32.0.0->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.4247553Z   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.5618424Z Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.5755191Z   Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.6015117Z Collecting idna<4,>=2.5 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.6146930Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.6422396Z Collecting urllib3<3,>=1.26 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.6554296Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.6817048Z Collecting certifi>=2023.5.7 (from requests>=2.31.0->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.6948851Z   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.7170733Z Collecting markdown-it-py>=2.2.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.7302013Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.7562421Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.7693500Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.7862721Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.4->pip-audit==2.9.0->-r requirements-dev.txt (line 3))
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.7997000Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.8178139Z Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.9022465Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 27.3 MB/s  0:00:00
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.9158378Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:42.9898729Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 143.1 MB/s  0:00:00
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.0030305Z Downloading pip_audit-2.9.0-py3-none-any.whl (58 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.0183189Z Downloading cyclonedx_python_lib-9.1.0-py3-none-any.whl (374 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.0340708Z Downloading license_expression-30.4.4-py3-none-any.whl (120 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.0492821Z Downloading packageurl_python-0.17.6-py3-none-any.whl (36 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.0677783Z Downloading py_serializable-2.1.0-py3-none-any.whl (23 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.0828430Z Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.0981080Z Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.1136913Z Downloading boolean_py-5.0-py3-none-any.whl (26 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.1288068Z Downloading cachecontrol-0.14.4-py3-none-any.whl (22 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.1444306Z Downloading msgpack-1.2.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (466 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.1608978Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.1764161Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.1998534Z Downloading pip_api-0.0.35-py3-none-any.whl (123 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.2154572Z Downloading pip_requirements_parser-32.0.1-py3-none-any.whl (35 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.2305654Z Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.2463685Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.2619842Z Downloading charset_normalizer-3.5.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.2778668Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.2933426Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.3090615Z Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.3248584Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.3409594Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.3482749Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 236.3 MB/s  0:00:00
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.3616206Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.3768272Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.3920363Z Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.4073028Z Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+verify	Run make setup lint test bench scan	2026-10-23T19:16:43.5521419Z Installing collected packages: sortedcontainers, boolean.py, urllib3, toml, ruff, pyparsing, pygments, platformdirs, pip, packaging, packageurl-python, msgpack, mdurl, license-expression, idna, filelock, defusedxml, charset_normalizer, certifi, requests, py-serializable, pip-requirements-parser, pip-api, markdown-it-py, rich, cyclonedx-python-lib, CacheControl, pip-audit
+verify	Run make setup lint test bench scan	2026-10-23T19:16:44.6030400Z   Attempting uninstall: pip
+verify	Run make setup lint test bench scan	2026-10-23T19:16:44.6059062Z     Found existing installation: pip 26.2.1
+verify	Run make setup lint test bench scan	2026-10-23T19:16:44.6524898Z     Uninstalling pip-26.2.1:
+verify	Run make setup lint test bench scan	2026-10-23T19:16:44.6589234Z       Successfully uninstalled pip-26.2.1
+verify	Run make setup lint test bench scan	2026-10-23T19:16:46.6834100Z 
+verify	Run make setup lint test bench scan	2026-10-23T19:16:46.6869910Z Successfully installed CacheControl-0.14.4 boolean.py-5.0 certifi-2026.10.23 charset_normalizer-3.5.2 cyclonedx-python-lib-9.1.0 defusedxml-0.7.1 filelock-4.2.4 idna-3.20 license-expression-30.4.4 markdown-it-py-4.2.0 mdurl-0.1.2 msgpack-1.2.3 packageurl-python-0.17.6 packaging-26.3 pip-26.2.2 pip-api-0.0.35 pip-audit-2.9.0 pip-requirements-parser-32.0.1 platformdirs-4.13.5 py-serializable-2.1.0 pygments-2.21.0 pyparsing-3.3.3 requests-2.34.2 rich-15.0.0 ruff-0.17.1 sortedcontainers-2.4.0 toml-0.10.2 urllib3-2.8.0
+verify	Run make setup lint test bench scan	2026-10-23T19:16:46.6875135Z 
+verify	Run make setup lint test bench scan	2026-10-23T19:16:46.6875931Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+verify	Run make setup lint test bench scan	2026-10-23T19:16:46.6877383Z [notice] To update, run: /home/runner/work/tidal/tidal/.venv/bin/python -m pip install --upgrade pip
+verify	Run make setup lint test bench scan	2026-10-23T19:16:46.7685525Z go mod download
+verify	Run make setup lint test bench scan	2026-10-23T19:16:46.7717042Z go: no module dependencies to download
+verify	Run make setup lint test bench scan	2026-10-23T19:16:46.7719138Z npm ci --prefix apps/web
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.4465532Z 
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.4466373Z added 23 packages, and audited 24 packages in 2s
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.4466893Z 
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.4467141Z 6 packages are looking for funding
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.4467579Z   run `npm fund` for details
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.4477397Z 
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.4477803Z found 0 vulnerabilities
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.4907854Z python3 scripts/check_go_format.py
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.5243355Z Go formatting clean
+verify	Run make setup lint test bench scan	2026-10-23T19:16:48.5284997Z go vet ./...
+verify	Run make setup lint test bench scan	2026-10-23T19:17:02.5246591Z .venv/bin/ruff check scripts
+verify	Run make setup lint test bench scan	2026-10-23T19:17:02.5321366Z All checks passed!
+verify	Run make setup lint test bench scan	2026-10-23T19:17:02.5326494Z .venv/bin/ruff format --check scripts
+verify	Run make setup lint test bench scan	2026-10-23T19:17:02.5396442Z 7 files already formatted
+verify	Run make setup lint test bench scan	2026-10-23T19:17:02.5401379Z npm run lint --prefix apps/web
+verify	Run make setup lint test bench scan	2026-10-23T19:17:02.6342455Z 
+verify	Run make setup lint test bench scan	2026-10-23T19:17:02.6343662Z > tidal-traffic-lab@0.1.0 lint
+verify	Run make setup lint test bench scan	2026-10-23T19:17:02.6344551Z > tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+verify	Run make setup lint test bench scan	2026-10-23T19:17:02.6345064Z 
+verify	Run make setup lint test bench scan	2026-10-23T19:17:04.0329895Z Checking formatting...
+verify	Run make setup lint test bench scan	2026-10-23T19:17:04.5280205Z All matched files use Prettier code style!
+verify	Run make setup lint test bench scan	2026-10-23T19:17:04.5491912Z go test -race -count=1 -v ./... > docs/results/tests.log
+verify	Run make setup lint test bench scan	2026-10-23T19:17:29.1228221Z mkdir -p bin
+verify	Run make setup lint test bench scan	2026-10-23T19:17:29.1243257Z go build -trimpath -o bin/tidal ./cmd/tidal
+verify	Run make setup lint test bench scan	2026-10-23T19:17:41.2815704Z npm run build --prefix apps/web
+verify	Run make setup lint test bench scan	2026-10-23T19:17:41.3749276Z 
+verify	Run make setup lint test bench scan	2026-10-23T19:17:41.3750474Z > tidal-traffic-lab@0.1.0 build
+verify	Run make setup lint test bench scan	2026-10-23T19:17:41.3751117Z > tsc --noEmit && vite build
+verify	Run make setup lint test bench scan	2026-10-23T19:17:41.3751392Z 
+verify	Run make setup lint test bench scan	2026-10-23T19:17:42.8128540Z ^[[36mvite v6.4.4 ^[[32mbuilding for production...^[[36m^[[39m
+verify	Run make setup lint test bench scan	2026-10-23T19:17:42.8981109Z transforming...
+verify	Run make setup lint test bench scan	2026-10-23T19:17:43.6809940Z ^[[32m✓^[[39m 28 modules transformed.
+verify	Run make setup lint test bench scan	2026-10-23T19:17:43.8029095Z rendering chunks...
+verify	Run make setup lint test bench scan	2026-10-23T19:17:43.8095488Z computing gzip size...
+verify	Run make setup lint test bench scan	2026-10-23T19:17:43.8199615Z ^[[2mdist/^[[22m^[[32mindex.html                 ^[[39m^[[1m^[[2m  0.63 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  0.38 kB^[[22m
+verify	Run make setup lint test bench scan	2026-10-23T19:17:43.8200875Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mindex-COlZNlQZ.css  ^[[39m^[[1m^[[2m 13.93 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  3.52 kB^[[22m
+verify	Run make setup lint test bench scan	2026-10-23T19:17:43.8202281Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mindex-poIchwZl.js   ^[[39m^[[1m^[[2m209.89 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 65.85 kB^[[22m
+verify	Run make setup lint test bench scan	2026-10-23T19:17:43.8203382Z ^[[32m✓ built in 982ms^[[39m
+verify	Run make setup lint test bench scan	2026-10-23T19:17:43.8478986Z python3 scripts/trace_provenance.py > docs/results/trace-provenance.log
+verify	Run make setup lint test bench scan	2026-10-23T19:17:43.8932956Z ./bin/tidal -bench > docs/results/bench-run.log
+verify	Run make setup lint test bench scan	2026-10-23T19:17:53.5758713Z go test ./internal/cache -run '^$' -bench Benchmark -benchmem -count=3 > docs/results/core-bench.log
+verify	Run make setup lint test bench scan	2026-10-23T19:18:00.2588325Z go run golang.org/x/vuln/cmd/govulncheck@v1.9.0 ./...
+verify	Run make setup lint test bench scan	2026-10-23T19:18:00.3453378Z go: downloading golang.org/x/vuln v1.9.0
+verify	Run make setup lint test bench scan	2026-10-23T19:18:00.7681494Z go: downloading golang.org/x/telemetry v0.0.0-20261010193011-f71dc92da45e
+verify	Run make setup lint test bench scan	2026-10-23T19:18:00.7760083Z go: downloading golang.org/x/mod v0.42.0
+verify	Run make setup lint test bench scan	2026-10-23T19:18:00.7760993Z go: downloading golang.org/x/tools v0.52.0
+verify	Run make setup lint test bench scan	2026-10-23T19:18:01.0355772Z go: downloading golang.org/x/sync v0.24.0
+verify	Run make setup lint test bench scan	2026-10-23T19:18:07.6648718Z No vulnerabilities found.
+verify	Run make setup lint test bench scan	2026-10-23T19:18:07.6867465Z npm audit --prefix apps/web --audit-level=low
+verify	Run make setup lint test bench scan	2026-10-23T19:18:08.1753612Z found 0 vulnerabilities
+verify	Run make setup lint test bench scan	2026-10-23T19:18:08.1828472Z .venv/bin/python -m pip_audit -r requirements-dev.txt -r requirements-browser.txt --progress-spinner off
+verify	Run make setup lint test bench scan	2026-10-23T19:18:15.8672130Z No known vulnerabilities found
+verify	Run docker build -t tidal:test .	﻿2026-10-23T19:18:15.9121225Z ##[group]Run docker build -t tidal:test .
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9121617Z ^[[36;1mdocker build -t tidal:test .^[[0m
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9185287Z shell: /usr/bin/bash -e {0}
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9185578Z env:
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9185890Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9186406Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9186911Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9187366Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9187820Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9188279Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:15.9188665Z ##[endgroup]
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:16.8541029Z #0 building with "default" instance using docker driver
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:16.8541759Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:16.8542190Z #1 [internal] load build definition from Dockerfile
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:16.8542692Z #1 transferring dockerfile: 609B 0.0s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:16.8543065Z #1 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:16.8543196Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:16.8543476Z #2 [auth] library/node:pull token for registry-1.docker.io
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.0047167Z #2 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.0047456Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.0047904Z #3 [auth] library/golang:pull token for registry-1.docker.io
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.0048459Z #3 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.0048654Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.0049149Z #4 [internal] load metadata for docker.io/library/golang:1.27.3-bookworm
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.1251084Z #4 ...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.1251489Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.1252659Z #5 [internal] load metadata for gcr.io/distroless/static-debian12:nonroot
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.1253417Z #5 DONE 0.4s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.2755017Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.2755827Z #6 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.3583517Z #6 DONE 0.6s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.3584094Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.3584744Z #4 [internal] load metadata for docker.io/library/golang:1.27.3-bookworm
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4931065Z #4 DONE 0.6s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4931373Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4931643Z #7 [internal] load .dockerignore
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4932470Z #7 transferring context: 119B done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4932899Z #7 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4933086Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4933387Z #8 [internal] load build context
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4934013Z #8 transferring context: 1.03MB 0.0s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4934316Z #8 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4934433Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4935303Z #9 [stage-2 1/6] FROM gcr.io/distroless/static-debian12:nonroot@sha256:afa5c872c891853ca7fcf1f12c3edb23f7eeef36189728842dd51042ff57f7ab
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4937125Z #9 resolve gcr.io/distroless/static-debian12:nonroot@sha256:afa5c872c891853ca7fcf1f12c3edb23f7eeef36189728842dd51042ff57f7ab 0.0s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4938900Z #9 sha256:12aa113e298cbae388b298c0dc163fa1547beba948153b23eb9094e16a07a770 2.73kB / 2.73kB done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4940564Z #9 sha256:afa5c872c891853ca7fcf1f12c3edb23f7eeef36189728842dd51042ff57f7ab 1.51kB / 1.51kB done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4942554Z #9 sha256:52dcfbabb7457ea47c82f6e13af8c8a4a1d9f7b0145142b3ecab20f2b888411d 2.67kB / 2.67kB done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4943467Z #9 DONE 0.1s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4943700Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4944480Z #10 [core 1/6] FROM docker.io/library/golang:1.27.3-bookworm@sha256:972b4110ba0f47539a975c31e52c64765e1ff19f2d74469ae4a595c6676e80a5
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4945892Z #10 resolve docker.io/library/golang:1.27.3-bookworm@sha256:972b4110ba0f47539a975c31e52c64765e1ff19f2d74469ae4a595c6676e80a5 0.0s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4946965Z #10 sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 0B / 23.87MB 0.1s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4947710Z #10 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 0B / 64.43MB 0.1s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4948464Z #10 sha256:972b4110ba0f47539a975c31e52c64765e1ff19f2d74469ae4a595c6676e80a5 6.53kB / 6.53kB done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4949208Z #10 sha256:fea12ba16096adec0f699ce1c4da2154d320450e56c1f63671f95d2a3551c77b 2.32kB / 2.32kB done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4950493Z #10 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 0B / 48.52MB 0.1s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.4951273Z #10 sha256:e0774ebe198a660f05b03dbafdbe7c806e1dbee8ac7dbff38f8a1b9865a0442a 3.06kB / 3.06kB done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.5958841Z #10 sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 3.15MB / 23.87MB 0.2s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.5961162Z #10 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 20.97MB / 48.52MB 0.2s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7233408Z #10 ...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7233795Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7235599Z #11 [stage-2 2/6] WORKDIR /app
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7236126Z #11 DONE 0.1s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7236325Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7237445Z #10 [core 1/6] FROM docker.io/library/golang:1.27.3-bookworm@sha256:972b4110ba0f47539a975c31e52c64765e1ff19f2d74469ae4a595c6676e80a5
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7239171Z #10 sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 23.87MB / 23.87MB 0.3s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7248313Z #10 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 22.02MB / 64.43MB 0.3s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7250705Z #10 sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 48.52MB / 48.52MB 0.3s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7252148Z #10 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 0B / 71.15MB 0.3s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7253485Z #10 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 0B / 92.63MB 0.3s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.7254780Z #10 extracting sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.8313620Z #10 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 58.72MB / 64.43MB 0.4s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.8316823Z #10 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 19.92MB / 71.15MB 0.4s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.9455399Z #10 sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 64.43MB / 64.43MB 0.4s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.9457475Z #10 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 47.19MB / 71.15MB 0.5s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.9458293Z #10 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 9.44MB / 92.63MB 0.5s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.9459088Z #10 sha256:c42ec79d38f93118e728683ce7bb8ffbfa2b4406713e0c670e53ac974b2794cd 126B / 126B 0.5s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:17.9460137Z #10 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0B / 32B 0.5s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:18.0657523Z #10 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 71.15MB / 71.15MB 0.6s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:18.0659045Z #10 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 41.94MB / 92.63MB 0.6s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:18.0660771Z #10 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.5s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:18.1714045Z #10 sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 71.15MB / 71.15MB 0.6s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:18.1715464Z #10 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 87.03MB / 92.63MB 0.7s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:18.2722546Z #10 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 92.63MB / 92.63MB 0.8s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:18.3933109Z #10 sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 92.63MB / 92.63MB 0.9s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:19.9826811Z #10 extracting sha256:8a051559ff62acdfa1af9916c3c67673d946bb71f81cb8f30c565fa647cb6a77 2.3s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:20.0961913Z #10 extracting sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:20.7326035Z #10 extracting sha256:55f3510f14ae1203443980e2b03e3c4adb950f89becd0189ad5032562ef49ea0 0.7s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.0570079Z #10 extracting sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9286679Z #10 ...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9287376Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9288954Z #12 [web 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9292979Z #12 resolve docker.io/library/node:22-bookworm-slim@sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d 0.0s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9294516Z #12 sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d 5.22kB / 5.22kB done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9295808Z #12 sha256:ea11b74b986d520137cdef9a5346e447a00f275ecc4abc0055b7151226231e09 1.93kB / 1.93kB done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9298036Z #12 sha256:58a96d9752cfedf3c4fcfcbe2dabbad725c147f7003caa9f7899a3f414ada3fc 6.77kB / 6.77kB done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9301223Z #12 sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 28.25MB / 28.25MB 0.9s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9303067Z #12 sha256:b43ad0aedb87ae13912d52799d0d5552c146dced05197a7fa83b117cb3308906 3.31kB / 3.31kB 0.7s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9304741Z #12 sha256:ba8be34911c2eabcd63c9da67f2e8887ddf912df62c1223ca377ef9e9655cfba 49.89MB / 49.89MB 1.2s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9305872Z #12 extracting sha256:11422d7ca1a44390a32bd8d8d9dc5946b4d053b3bbd9507d682e35584ba84a26 1.4s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9307206Z #12 sha256:696628b66b50a8ea2d374542f47107bc19fb3fd29825211da5c68b74a1b01555 1.71MB / 1.71MB 1.0s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9308422Z #12 sha256:9d58805976c12f11013d188c510c3520e3f061c1b311d4905afe5865aa496e63 449B / 449B 1.0s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9310127Z #12 extracting sha256:b43ad0aedb87ae13912d52799d0d5552c146dced05197a7fa83b117cb3308906 done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9311478Z #12 extracting sha256:ba8be34911c2eabcd63c9da67f2e8887ddf912df62c1223ca377ef9e9655cfba 1.6s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9312931Z #12 extracting sha256:696628b66b50a8ea2d374542f47107bc19fb3fd29825211da5c68b74a1b01555 0.0s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9314349Z #12 extracting sha256:9d58805976c12f11013d188c510c3520e3f061c1b311d4905afe5865aa496e63 done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9315236Z #12 DONE 4.5s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9315387Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9315567Z #13 [web 2/6] WORKDIR /web
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9316020Z #13 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9316222Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:21.9316879Z #10 [core 1/6] FROM docker.io/library/golang:1.27.3-bookworm@sha256:972b4110ba0f47539a975c31e52c64765e1ff19f2d74469ae4a595c6676e80a5
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:22.1483444Z #10 ...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:22.1483753Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:22.1484180Z #14 [web 3/6] COPY apps/web/package*.json ./
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:22.1484741Z #14 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:22.1484969Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:22.1486038Z #10 [core 1/6] FROM docker.io/library/golang:1.27.3-bookworm@sha256:972b4110ba0f47539a975c31e52c64765e1ff19f2d74469ae4a595c6676e80a5
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.8267115Z #10 extracting sha256:e0959ba39613fdd89ed3679cb0483740e954fcc9d3e68d882e6f27130ac124e0 2.7s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9743407Z #10 ...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9744502Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9745802Z #15 [web 4/6] RUN npm ci
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9746760Z #15 1.919 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9747674Z #15 1.919 added 23 packages, and audited 24 packages in 2s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9748684Z #15 1.919 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9750069Z #15 1.919 6 packages are looking for funding
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9751151Z #15 1.919   run `npm fund` for details
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9751813Z #15 1.920 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9752458Z #15 1.920 found 0 vulnerabilities
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9753195Z #15 1.921 npm notice
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9753939Z #15 1.921 npm notice New major version of npm available! 10.9.9 -> 12.2.1
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9754989Z #15 1.921 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9755923Z #15 1.921 npm notice To update run: npm install -g npm@12.2.1
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9756508Z #15 1.921 npm notice
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9756857Z #15 DONE 2.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9757059Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9757298Z #16 [web 5/6] COPY apps/web/ ./
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9757703Z #16 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9757880Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9758650Z #10 [core 1/6] FROM docker.io/library/golang:1.27.3-bookworm@sha256:972b4110ba0f47539a975c31e52c64765e1ff19f2d74469ae4a595c6676e80a5
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:23.9762278Z #10 extracting sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:26.6543912Z #10 extracting sha256:68f2074ab7fd11f602b2218e3c94fb7870f11631e99647e34b8d6ab97ad04076 2.7s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.0891197Z #10 extracting sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8403824Z #10 ...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8404295Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8404623Z #17 [web 6/6] RUN npm run build
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8405079Z #17 0.254 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8405556Z #17 0.254 > tidal-traffic-lab@0.1.0 build
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8406194Z #17 0.254 > tsc --noEmit && vite build
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8406631Z #17 0.254 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8407139Z #17 2.335 vite v6.4.4 building for production...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8407694Z #17 2.438 transforming...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8408518Z #17 3.476 ✓ 28 modules transformed.
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8409072Z #17 3.661 rendering chunks...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8409562Z #17 3.670 computing gzip size...
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8410299Z #17 3.682 dist/index.html                   0.63 kB │ gzip:  0.38 kB
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8411343Z #17 3.682 dist/assets/index-COlZNlQZ.css   13.93 kB │ gzip:  3.52 kB
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8412196Z #17 3.682 dist/assets/index-poIchwZl.js   209.89 kB │ gzip: 65.85 kB
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8412850Z #17 3.682 ✓ built in 1.31s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8413273Z #17 DONE 3.8s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8413440Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:27.8414262Z #10 [core 1/6] FROM docker.io/library/golang:1.27.3-bookworm@sha256:972b4110ba0f47539a975c31e52c64765e1ff19f2d74469ae4a595c6676e80a5
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:31.9924903Z #10 extracting sha256:82e0bb27ae78502103ed383ed33346f88a83943fb7bd93977850d5890ee8fb3b 4.9s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.4616026Z #10 extracting sha256:c42ec79d38f93118e728683ce7bb8ffbfa2b4406713e0c670e53ac974b2794cd
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6868564Z #10 extracting sha256:c42ec79d38f93118e728683ce7bb8ffbfa2b4406713e0c670e53ac974b2794cd done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6870427Z #10 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6871402Z #10 DONE 15.1s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6871644Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6871866Z #18 [core 2/6] WORKDIR /src
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6872302Z #18 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6872560Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6872796Z #19 [core 3/6] COPY go.mod ./
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6873230Z #19 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6873437Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6873665Z #20 [core 4/6] COPY cmd/ cmd/
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6874111Z #20 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6874331Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6874684Z #21 [core 5/6] COPY internal/ internal/
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6875250Z #21 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6875459Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:32.6876007Z #22 [core 6/6] RUN CGO_ENABLED=0 go build -trimpath -o /tidal ./cmd/tidal
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:44.7321305Z #22 DONE 12.2s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.3545835Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.3546626Z #23 [stage-2 3/6] COPY --from=core /tidal /app/tidal
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5503881Z #23 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5504192Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5504567Z #24 [stage-2 4/6] COPY --from=web /web/dist /app/apps/web/dist
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5505664Z #24 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5505808Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5505993Z #25 [stage-2 5/6] COPY data/ /app/data/
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5506285Z #25 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5506404Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5506757Z #26 [stage-2 6/6] COPY docs/results/campaign.json /app/docs/results/campaign.json
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5507182Z #26 DONE 0.0s
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5507308Z 
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5507426Z #27 exporting to image
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:45.5507680Z #27 exporting layers
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:46.0136556Z #27 exporting layers 0.6s done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:46.0315037Z #27 writing image sha256:0898748e316b8eca3288f63412b07c710d60a5bb1cbe67b0a1fe7ea0a5fec624 done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:46.0316342Z #27 naming to docker.io/library/tidal:test done
+verify	Run docker build -t tidal:test .	2026-10-23T19:18:46.0316961Z #27 DONE 0.6s
+verify	Run python3 scripts/container_smoke.py	﻿2026-10-23T19:18:46.0408175Z ##[group]Run python3 scripts/container_smoke.py
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0408581Z ^[[36;1mpython3 scripts/container_smoke.py^[[0m
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0473307Z shell: /usr/bin/bash -e {0}
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0473572Z env:
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0473841Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0474297Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0474751Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0475166Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0475575Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0475976Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.0476314Z ##[endgroup]
+verify	Run python3 scripts/container_smoke.py	2026-10-23T19:18:46.7238971Z {"image": "distroless nonroot", "http_origin_hit_invalidation_outage_recovery_restart": "pass", "state_persistence": "not promised; cache is intentionally disposable"}
+verify	Run .venv/bin/pip install -r requirements-browser.txt	﻿2026-10-23T19:18:46.7398360Z ##[group]Run .venv/bin/pip install -r requirements-browser.txt
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7398885Z ^[[36;1m.venv/bin/pip install -r requirements-browser.txt^[[0m
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7462975Z shell: /usr/bin/bash -e {0}
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7463325Z env:
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7463688Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7464303Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7464923Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7465462Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7466000Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7466548Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:46.7467010Z ##[endgroup]
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:47.1067800Z Collecting playwright==1.64.0 (from -r requirements-browser.txt (line 1))
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:47.1083680Z   Using cached playwright-1.64.0-py3-none-manylinux1_x86_64.whl.metadata (3.3 kB)
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:47.1166478Z Collecting pyee<15,>=13 (from playwright==1.64.0->-r requirements-browser.txt (line 1))
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:47.1178377Z   Using cached pyee-14.0.0-py3-none-any.whl.metadata (1.8 kB)
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:47.2522798Z Collecting greenlet<4.0.0,>=3.1.1 (from playwright==1.64.0->-r requirements-browser.txt (line 1))
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:47.2536386Z   Using cached greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:47.2641195Z Collecting typing-extensions (from pyee<15,>=13->playwright==1.64.0->-r requirements-browser.txt (line 1))
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:47.2652356Z   Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:47.3488891Z Downloading playwright-1.64.0-py3-none-manylinux1_x86_64.whl (48.3 MB)
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:48.2518710Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.3/48.3 MB 56.3 MB/s  0:00:00
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:48.2655025Z Downloading greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (623 kB)
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:48.2712658Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 623.8/623.8 kB 102.9 MB/s  0:00:00
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:48.2842987Z Downloading pyee-14.0.0-py3-none-any.whl (15 kB)
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:48.2990899Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:48.3850511Z Installing collected packages: typing-extensions, greenlet, pyee, playwright
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:49.2623013Z 
+verify	Run .venv/bin/pip install -r requirements-browser.txt	2026-10-23T19:18:49.2656606Z Successfully installed greenlet-3.5.6 playwright-1.64.0 pyee-14.0.0 typing-extensions-4.16.0
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	﻿2026-10-23T19:18:49.3287846Z ##[group]Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3288494Z ^[[36;1m.venv/bin/python -m playwright install --with-deps chromium ffmpeg^[[0m
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3353030Z shell: /usr/bin/bash -e {0}
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3353325Z env:
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3353634Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3354151Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3354709Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3355175Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3355626Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3356084Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.3356466Z ##[endgroup]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.7014038Z Installing dependencies...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.7112125Z Switching to root user to install dependencies...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.8070854Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.8433187Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.8434922Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.8447960Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.8502944Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.8521417Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:49.9818252Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [576 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.0151722Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble/main armhf Packages [12.4 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.0184093Z Get:9 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [640 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.0271009Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1401 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.0337846Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [310 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.0375665Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1706 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.0481489Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [342 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.0504733Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1805 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.0608249Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [411 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.1376987Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1146 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.1454784Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [231 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.1482779Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1222 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.1553705Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [246 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.2012355Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1713 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:50.2112169Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [392 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:53.3207854Z Fetched 12.5 MB in 1s (9793 kB/s)
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.2578442Z Reading package lists...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.2825293Z Reading package lists...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.4790757Z Building dependency tree...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.4797856Z Reading state information...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6251393Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6252810Z libasound2t64 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6254372Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6255954Z libatk-bridge2.0-0t64 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6257488Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6259904Z libatk1.0-0t64 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6261082Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6261846Z libatspi2.0-0t64 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6262675Z libcairo2 is already the newest version (1.18.0-3build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6263469Z libcairo2 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6264169Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6264858Z libcups2t64 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6265544Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6266205Z libdbus-1-3 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6266904Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6267688Z libdrm2 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6268363Z libgbm1 is already the newest version (25.2.8-0ubuntu0.24.04.4).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6269012Z libgbm1 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6269890Z libnspr4 is already the newest version (2:4.35-1.1build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6270417Z libnspr4 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6271005Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6271486Z libpango-1.0-0 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6271959Z libx11-6 is already the newest version (2:1.8.7-1ubuntu0.1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6272395Z libx11-6 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6272830Z libxcb1 is already the newest version (1.15-1ubuntu2).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6273241Z libxcb1 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6273718Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6274192Z libxcomposite1 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6274773Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6275250Z libxdamage1 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6275712Z libxext6 is already the newest version (2:1.3.4-1build2).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6276139Z libxext6 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6276587Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6277025Z libxfixes3 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6277486Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6277943Z libxkbcommon0 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6278414Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6278858Z libxrandr2 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6279634Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6280397Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6280828Z libfontconfig1 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6281301Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.2).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6281745Z libfreetype6 set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6282175Z fonts-liberation is already the newest version (1:2.1.5-3).
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6282592Z fonts-liberation set to manually installed.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6283004Z The following additional packages will be installed:
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6283489Z   gir1.2-glib-2.0 libglib2.0-bin libglib2.0-data libnss3-tools
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6284021Z   xfonts-encodings xfonts-utils xserver-common
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6284365Z Suggested packages:
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6284635Z   low-memory-monitor
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6285111Z Recommended packages:
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6285471Z   fonts-ipafont-mincho fonts-tlwg-loma xfonts-base
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6494229Z The following NEW packages will be installed:
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6495319Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6499972Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6500614Z   xfonts-utils
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6503504Z The following packages will be upgraded:
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6505381Z   gir1.2-glib-2.0 libglib2.0-0t64 libglib2.0-bin libglib2.0-data libnss3
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6509126Z   libnss3-tools xserver-common xvfb
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6680588Z 8 upgraded, 9 newly installed, 0 to remove and 91 not upgraded.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6681337Z Need to get 25.9 MB of archives.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6681844Z After this operation, 79.5 MB of additional disk space will be used.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.6682408Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.7156715Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.8135961Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-data all 2.80.0-6ubuntu3.10 [50.2 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.8442407Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-bin amd64 2.80.0-6ubuntu3.10 [97.9 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.8761716Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 gir1.2-glib-2.0 amd64 2.80.0-6ubuntu3.10 [183 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.9102290Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglib2.0-0t64 amd64 2.80.0-6ubuntu3.10 [1548 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:54.9789712Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.0748872Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.1058105Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.1678937Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.2741674Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libnss3 amd64 2:3.98-1ubuntu0.3 [1445 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.3143150Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libnss3-tools amd64 2:3.98-1ubuntu0.3 [615 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.3496987Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.3850032Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.4172858Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.4516487Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.4883891Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 xserver-common all 2:21.1.12-1ubuntu1.9 [35.0 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.5242574Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 xvfb amd64 2:21.1.12-1ubuntu1.9 [877 kB]
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.7938441Z Fetched 25.9 MB in 1s (29.7 MB/s)
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8173484Z Selecting previously unselected package fonts-ipafont-gothic.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8495540Z (Reading database ... 
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8496173Z (Reading database ... 5%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8496605Z (Reading database ... 10%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8497007Z (Reading database ... 15%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8497434Z (Reading database ... 20%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8497815Z (Reading database ... 25%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8498192Z (Reading database ... 30%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8498569Z (Reading database ... 35%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8498981Z (Reading database ... 40%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8500210Z (Reading database ... 45%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8500553Z (Reading database ... 50%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.8542775Z (Reading database ... 55%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:55.9726851Z (Reading database ... 60%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:56.2133130Z (Reading database ... 65%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:56.3979589Z (Reading database ... 70%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:56.5662567Z (Reading database ... 75%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:56.7674162Z (Reading database ... 80%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:56.9552073Z (Reading database ... 85%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.1396251Z (Reading database ... 90%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.3082378Z (Reading database ... 95%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.3083224Z (Reading database ... 100%
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.3084362Z (Reading database ... 203540 files and directories currently installed.)
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.3133314Z Preparing to unpack .../00-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.3228624Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.5698636Z Preparing to unpack .../01-libglib2.0-data_2.80.0-6ubuntu3.10_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.5717744Z Unpacking libglib2.0-data (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.6053888Z Preparing to unpack .../02-libglib2.0-bin_2.80.0-6ubuntu3.10_amd64.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.6073483Z Unpacking libglib2.0-bin (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.6639566Z Preparing to unpack .../03-gir1.2-glib-2.0_2.80.0-6ubuntu3.10_amd64.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.6658494Z Unpacking gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.7076015Z Preparing to unpack .../04-libglib2.0-0t64_2.80.0-6ubuntu3.10_amd64.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.7149769Z Unpacking libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.10) over (2.80.0-6ubuntu3.9) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.7594926Z Selecting previously unselected package fonts-freefont-ttf.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.7728703Z Preparing to unpack .../05-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.7782364Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.8635435Z Selecting previously unselected package fonts-tlwg-loma-otf.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.8763855Z Preparing to unpack .../06-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.8771198Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.8975028Z Selecting previously unselected package fonts-unifont.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.9102131Z Preparing to unpack .../07-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:57.9109597Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.0152139Z Selecting previously unselected package fonts-wqy-zenhei.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.0284330Z Preparing to unpack .../08-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.0391505Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.5227154Z Preparing to unpack .../09-libnss3_2%3a3.98-1ubuntu0.3_amd64.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.5249821Z Unpacking libnss3:amd64 (2:3.98-1ubuntu0.3) over (2:3.98-1ubuntu0.2) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.5773974Z Preparing to unpack .../10-libnss3-tools_2%3a3.98-1ubuntu0.3_amd64.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.5795183Z Unpacking libnss3-tools (2:3.98-1ubuntu0.3) over (2:3.98-1ubuntu0.2) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.6213859Z Selecting previously unselected package xfonts-encodings.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.6342512Z Preparing to unpack .../11-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.6349849Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.6638139Z Selecting previously unselected package xfonts-utils.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.6765107Z Preparing to unpack .../12-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.6772302Z Unpacking xfonts-utils (1:7.7+6build3) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.7091426Z Selecting previously unselected package xfonts-cyrillic.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.7219448Z Preparing to unpack .../13-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.7227418Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.7573917Z Selecting previously unselected package xfonts-scalable.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.7700897Z Preparing to unpack .../14-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.7707509Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.8097848Z Preparing to unpack .../15-xserver-common_2%3a21.1.12-1ubuntu1.9_all.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.8117708Z Unpacking xserver-common (2:21.1.12-1ubuntu1.9) over (2:21.1.12-1ubuntu1.8) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.8455437Z Preparing to unpack .../16-xvfb_2%3a21.1.12-1ubuntu1.9_amd64.deb ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.8475683Z Unpacking xvfb (2:21.1.12-1ubuntu1.9) over (2:21.1.12-1ubuntu1.8) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9008431Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9132117Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9150479Z Setting up libnss3:amd64 (2:3.98-1ubuntu0.3) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9169005Z Setting up libglib2.0-0t64:amd64 (2.80.0-6ubuntu3.10) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9276051Z Setting up libglib2.0-data (2.80.0-6ubuntu3.10) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9292991Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9309884Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9325971Z Setting up gir1.2-glib-2.0:amd64 (2.80.0-6ubuntu3.10) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9342109Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9406411Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9421823Z Setting up xserver-common (2:21.1.12-1ubuntu1.9) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9438606Z Setting up libnss3-tools (2:3.98-1ubuntu0.3) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9459109Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9478099Z Setting up xvfb (2:21.1.12-1ubuntu1.9) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9495310Z Setting up libglib2.0-bin (2.80.0-6ubuntu3.10) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9513351Z Setting up xfonts-utils (1:7.7+6build3) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9552309Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:58.9854445Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.0129824Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.0581149Z Processing triggers for man-db (2.12.0-4build2) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.0606153Z Not building database; man-db/auto-update is not 'true'.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.0620171Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.7520241Z 
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.7524633Z Running kernel seems to be up-to-date.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.7525087Z 
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.7525324Z Restarting services...
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.7995570Z  systemctl restart packagekit.service php8.3-fpm.service polkit.service udisks2.service
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.9353058Z 
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.9370452Z Service restarts being deferred:
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.9390496Z  systemctl restart ModemManager.service
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.9391197Z  systemctl restart networkd-dispatcher.service
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.9391565Z 
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.9391986Z No containers need to be restarted.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.9392180Z 
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.9392385Z No user sessions are running outdated binaries.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:18:59.9392597Z 
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:00.9128453Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:00.9130296Z Downloading Chrome for Testing 156.0.8078.4 (playwright chromium v1248) from https://cdn.playwright.dev/builds/cft/156.0.8078.4/linux64/chrome-linux64.zip
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:01.4013653Z |                                                                                |   0% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:01.7886000Z |■■■■■■■■                                                                        |  10% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:01.8843887Z |■■■■■■■■■■■■■■■■                                                                |  20% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:01.9819963Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:02.0503900Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:02.1360941Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:02.2179786Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:02.2991153Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:02.4117040Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:02.4892454Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:02.5828537Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 191.1 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.2473643Z Chrome for Testing 156.0.8078.4 (playwright chromium v1248) downloaded to /home/runner/.cache/ms-playwright/chromium-1248
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.2479039Z Downloading FFmpeg (playwright ffmpeg v1013) from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-linux.zip
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.7641653Z |                                                                                |   0% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.8116546Z |■■■■■■■■                                                                        |  10% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.8432974Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.8601723Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.8723677Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.8883460Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.8948353Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.9100328Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.9140439Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.9182081Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.9259989Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.2 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.9947440Z FFmpeg (playwright ffmpeg v1013) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1013
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:06.9952353Z Downloading Chrome Headless Shell 156.0.8078.4 (playwright chromium-headless-shell v1248) from https://cdn.playwright.dev/builds/cft/156.0.8078.4/linux64/chrome-headless-shell-linux64.zip
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:07.4743839Z |                                                                                |   0% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:07.8114952Z |■■■■■■■■                                                                        |  10% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:07.8883183Z |■■■■■■■■■■■■■■■■                                                                |  20% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:07.9541378Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:08.0316409Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:08.0726999Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:08.1170373Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:08.1740507Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:08.2157158Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:08.2508641Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:08.3054697Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 120 MiB
+verify	Run .venv/bin/python -m playwright install --with-deps chromium ffmpeg	2026-10-23T19:19:10.6571865Z Chrome Headless Shell 156.0.8078.4 (playwright chromium-headless-shell v1248) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1248
+verify	Run .venv/bin/python scripts/review.py	﻿2026-10-23T19:19:10.6829719Z ##[group]Run .venv/bin/python scripts/review.py
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6830389Z ^[[36;1m.venv/bin/python scripts/review.py^[[0m
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6897600Z shell: /usr/bin/bash -e {0}
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6898026Z env:
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6898472Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6899234Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6900335Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6900798Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6901234Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6901625Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:10.6901950Z ##[endgroup]
+verify	Run .venv/bin/python scripts/review.py	2026-10-23T19:19:16.5673268Z {"elapsed_seconds": 4.237655044999997, "receipts": 13, "page_errors": []}
+verify	Run actions/upload-artifact@v4	﻿2026-10-23T19:19:16.6022429Z ##[group]Run actions/upload-artifact@v4
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6022752Z with:
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6022960Z   name: tidal-runtime-evidence
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6023210Z   path: docs/results/
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6023434Z   if-no-files-found: warn
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6023671Z   compression-level: 6
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6023883Z   overwrite: false
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6024098Z   include-hidden-files: false
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6024331Z env:
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6024577Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6025001Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6025627Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6026004Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6026382Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6026773Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.6027091Z ##[endgroup]
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.7689161Z (node:14665) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.7690305Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.7836083Z With the provided path, there will be 24 files uploaded
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.7837359Z Artifact name is valid!
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:16.7838035Z Root directory input is valid!
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:17.0593182Z Beginning upload of artifact content to blob storage
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:17.3752447Z (node:14665) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:17.8568060Z Uploaded bytes 8388608
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:17.9442117Z Uploaded bytes 11559950
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:17.9868538Z Finished uploading artifact content to blob storage!
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:17.9870221Z SHA256 digest of uploaded artifact zip is eccdbfb430b1e020a3777e99165ef167a1d4a63bb30e4646c014e5c52895259c
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:17.9871389Z Finalizing artifact upload
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:18.4581396Z Artifact tidal-runtime-evidence.zip successfully finalized. Artifact ID 12526900159
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:18.4583000Z Artifact tidal-runtime-evidence has been successfully uploaded! Final size is 11559950 bytes. Artifact ID is 12526900159
+verify	Run actions/upload-artifact@v4	2026-10-23T19:19:18.4584581Z Artifact download URL: https://github.com/rjrddy/tidal/actions/runs/40010079620/artifacts/12526900159
+verify	Post Run actions/setup-python@v5	﻿2026-10-23T19:19:18.4766485Z Post job cleanup.
+verify	Post Run actions/setup-python@v5	2026-10-23T19:19:18.5950391Z (node:14677) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-python@v5	2026-10-23T19:19:18.5952592Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/setup-node@v4	﻿2026-10-23T19:19:18.6133807Z Post job cleanup.
+verify	Post Run actions/setup-node@v4	2026-10-23T19:19:18.7474746Z (node:14685) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-node@v4	2026-10-23T19:19:18.7476700Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/setup-go@v5	﻿2026-10-23T19:19:18.7671864Z Post job cleanup.
+verify	Post Run actions/setup-go@v5	2026-10-23T19:19:18.8949118Z (node:14693) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+verify	Post Run actions/setup-go@v5	2026-10-23T19:19:18.8950893Z (Use `node --trace-deprecation ...` to show where the warning was created)
+verify	Post Run actions/checkout@v4	﻿2026-10-23T19:19:18.9144467Z Post job cleanup.
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0070379Z [command]/usr/bin/git version
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0116451Z git version 2.55.0
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0171190Z Temporarily overriding HOME='/home/runner/work/_temp/8ad5984a-c36c-4b13-868a-b93d78b6d11d' before making global git config changes
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0173170Z Adding repository directory to the temporary git global config as a safe directory
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0180621Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/tidal/tidal
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0226598Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0278299Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0561484Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0579735Z http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0592691Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0630907Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0895943Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+verify	Post Run actions/checkout@v4	2026-10-23T19:19:19.0936007Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+verify	Complete job	﻿2026-10-23T19:19:19.1365516Z Cleaning up orphan processes
+verify	Complete job	2026-10-23T19:19:19.1855457Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-go@v5, actions/setup-node@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
