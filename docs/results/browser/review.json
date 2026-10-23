@@ -1,0 +1,1593 @@
+{
+  "elapsed_seconds": 92.32959091709927,
+  "page_errors": [],
+  "receipts": [
+    {
+      "kind": "replay",
+      "rows": [
+        {
+          "trace": "scan",
+          "mode": "fixed-ttl",
+          "requests": 4096,
+          "hit_rate": 0.194091796875,
+          "origin_calls": 3301,
+          "stale_serves": 7,
+          "switches": 0
+        },
+        {
+          "trace": "scan",
+          "mode": "plain-lru",
+          "requests": 4096,
+          "hit_rate": 0.229248046875,
+          "origin_calls": 3157,
+          "stale_serves": 9,
+          "switches": 0
+        },
+        {
+          "trace": "scan",
+          "mode": "lfu",
+          "requests": 4096,
+          "hit_rate": 0.260498046875,
+          "origin_calls": 3029,
+          "stale_serves": 19,
+          "switches": 0
+        },
+        {
+          "trace": "scan",
+          "mode": "tinylfu",
+          "requests": 4096,
+          "hit_rate": 0.263916015625,
+          "origin_calls": 3015,
+          "stale_serves": 15,
+          "switches": 0
+        },
+        {
+          "trace": "scan",
+          "mode": "adaptive",
+          "requests": 4096,
+          "hit_rate": 0.240478515625,
+          "origin_calls": 3165,
+          "stale_serves": 6,
+          "switches": 1
+        }
+      ]
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.906,
+      "result": {
+        "value": {
+          "key": "k90177",
+          "version": 0,
+          "body": "synthetic response for k90177",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "lru"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 0.003,
+      "result": {
+        "value": {
+          "key": "k90177",
+          "version": 0,
+          "body": "synthetic response for k90177",
+          "max_age_ms": 1200
+        },
+        "hit": true,
+        "refresh_eligible": false,
+        "policy": "lru"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 0.004,
+      "result": {
+        "value": {
+          "key": "k90177",
+          "version": 0,
+          "body": "synthetic response for k90177",
+          "max_age_ms": 1200
+        },
+        "hit": true,
+        "refresh_eligible": false,
+        "policy": "lru"
+      },
+      "stale_observed": true
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.5,
+      "result": {
+        "value": {
+          "key": "k90177",
+          "version": 2,
+          "body": "synthetic response for k90177",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "lru"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "caught-origin-outage",
+      "text": "REQUEST REJECTED\nError: origin load: origin status 503"
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.562,
+      "result": {
+        "value": {
+          "key": "k99999",
+          "version": 0,
+          "body": "synthetic response for k99999",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "lru"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-drive",
+      "cache": {
+        "requests": 1030,
+        "hits": 84,
+        "origin_calls": 946,
+        "refreshes": 0,
+        "errors": 1,
+        "invalidated_loads": 0,
+        "switches": 1,
+        "selected": "tinylfu",
+        "resident": 96,
+        "inflight": 0,
+        "windows": [
+          {
+            "at": 256,
+            "selected": "lru",
+            "rates": {
+              "lfu": 0.08203125,
+              "lru": 0.078125,
+              "tinylfu": 0.0703125
+            },
+            "switched": false
+          },
+          {
+            "at": 512,
+            "selected": "lru",
+            "rates": {
+              "lfu": 0.0703125,
+              "lru": 0.05078125,
+              "tinylfu": 0.078125
+            },
+            "switched": false
+          },
+          {
+            "at": 768,
+            "selected": "lru",
+            "rates": {
+              "lfu": 0.125,
+              "lru": 0.078125,
+              "tinylfu": 0.12890625
+            },
+            "switched": false
+          },
+          {
+            "at": 1024,
+            "selected": "tinylfu",
+            "rates": {
+              "lfu": 0.1640625,
+              "lru": 0.125,
+              "tinylfu": 0.19921875
+            },
+            "switched": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 0.005,
+      "result": {
+        "value": {
+          "key": "k17",
+          "version": 0,
+          "body": "synthetic response for k17",
+          "max_age_ms": 1200
+        },
+        "hit": true,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "responsive",
+      "width": 390,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 768,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1024,
+      "no_overflow": true
+    },
+    {
+      "kind": "responsive",
+      "width": 1440,
+      "no_overflow": true
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.578,
+      "result": {
+        "value": {
+          "key": "k100",
+          "version": 0,
+          "body": "synthetic response for k100",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.52,
+      "result": {
+        "value": {
+          "key": "k100",
+          "version": 1,
+          "body": "synthetic response for k100",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 3.245,
+      "result": {
+        "value": {
+          "key": "k101",
+          "version": 0,
+          "body": "synthetic response for k101",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.548,
+      "result": {
+        "value": {
+          "key": "k102",
+          "version": 0,
+          "body": "synthetic response for k102",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.552,
+      "result": {
+        "value": {
+          "key": "k103",
+          "version": 0,
+          "body": "synthetic response for k103",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.533,
+      "result": {
+        "value": {
+          "key": "k104",
+          "version": 0,
+          "body": "synthetic response for k104",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.516,
+      "result": {
+        "value": {
+          "key": "k104",
+          "version": 1,
+          "body": "synthetic response for k104",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.594,
+      "result": {
+        "value": {
+          "key": "k105",
+          "version": 0,
+          "body": "synthetic response for k105",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.67,
+      "result": {
+        "value": {
+          "key": "k106",
+          "version": 0,
+          "body": "synthetic response for k106",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.573,
+      "result": {
+        "value": {
+          "key": "k107",
+          "version": 0,
+          "body": "synthetic response for k107",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 3.512,
+      "result": {
+        "value": {
+          "key": "k108",
+          "version": 0,
+          "body": "synthetic response for k108",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.468,
+      "result": {
+        "value": {
+          "key": "k108",
+          "version": 1,
+          "body": "synthetic response for k108",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.577,
+      "result": {
+        "value": {
+          "key": "k109",
+          "version": 0,
+          "body": "synthetic response for k109",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.685,
+      "result": {
+        "value": {
+          "key": "k110",
+          "version": 0,
+          "body": "synthetic response for k110",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.579,
+      "result": {
+        "value": {
+          "key": "k111",
+          "version": 0,
+          "body": "synthetic response for k111",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.594,
+      "result": {
+        "value": {
+          "key": "k112",
+          "version": 0,
+          "body": "synthetic response for k112",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.556,
+      "result": {
+        "value": {
+          "key": "k112",
+          "version": 1,
+          "body": "synthetic response for k112",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 3.464,
+      "result": {
+        "value": {
+          "key": "k113",
+          "version": 0,
+          "body": "synthetic response for k113",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.784,
+      "result": {
+        "value": {
+          "key": "k114",
+          "version": 0,
+          "body": "synthetic response for k114",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.666,
+      "result": {
+        "value": {
+          "key": "k115",
+          "version": 0,
+          "body": "synthetic response for k115",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.637,
+      "result": {
+        "value": {
+          "key": "k116",
+          "version": 0,
+          "body": "synthetic response for k116",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.459,
+      "result": {
+        "value": {
+          "key": "k116",
+          "version": 1,
+          "body": "synthetic response for k116",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.528,
+      "result": {
+        "value": {
+          "key": "k117",
+          "version": 0,
+          "body": "synthetic response for k117",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.5,
+      "result": {
+        "value": {
+          "key": "k118",
+          "version": 0,
+          "body": "synthetic response for k118",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.612,
+      "result": {
+        "value": {
+          "key": "k119",
+          "version": 0,
+          "body": "synthetic response for k119",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.732,
+      "result": {
+        "value": {
+          "key": "k100",
+          "version": 1,
+          "body": "synthetic response for k100",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.834,
+      "result": {
+        "value": {
+          "key": "k100",
+          "version": 2,
+          "body": "synthetic response for k100",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.657,
+      "result": {
+        "value": {
+          "key": "k101",
+          "version": 0,
+          "body": "synthetic response for k101",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.525,
+      "result": {
+        "value": {
+          "key": "k102",
+          "version": 0,
+          "body": "synthetic response for k102",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.732,
+      "result": {
+        "value": {
+          "key": "k103",
+          "version": 0,
+          "body": "synthetic response for k103",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.529,
+      "result": {
+        "value": {
+          "key": "k104",
+          "version": 1,
+          "body": "synthetic response for k104",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.363,
+      "result": {
+        "value": {
+          "key": "k104",
+          "version": 2,
+          "body": "synthetic response for k104",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.539,
+      "result": {
+        "value": {
+          "key": "k105",
+          "version": 0,
+          "body": "synthetic response for k105",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.552,
+      "result": {
+        "value": {
+          "key": "k106",
+          "version": 0,
+          "body": "synthetic response for k106",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.557,
+      "result": {
+        "value": {
+          "key": "k107",
+          "version": 0,
+          "body": "synthetic response for k107",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 3.107,
+      "result": {
+        "value": {
+          "key": "k108",
+          "version": 1,
+          "body": "synthetic response for k108",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.513,
+      "result": {
+        "value": {
+          "key": "k108",
+          "version": 2,
+          "body": "synthetic response for k108",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.55,
+      "result": {
+        "value": {
+          "key": "k109",
+          "version": 0,
+          "body": "synthetic response for k109",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 3.828,
+      "result": {
+        "value": {
+          "key": "k110",
+          "version": 0,
+          "body": "synthetic response for k110",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.531,
+      "result": {
+        "value": {
+          "key": "k111",
+          "version": 0,
+          "body": "synthetic response for k111",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.669,
+      "result": {
+        "value": {
+          "key": "k112",
+          "version": 1,
+          "body": "synthetic response for k112",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.475,
+      "result": {
+        "value": {
+          "key": "k112",
+          "version": 2,
+          "body": "synthetic response for k112",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.777,
+      "result": {
+        "value": {
+          "key": "k113",
+          "version": 0,
+          "body": "synthetic response for k113",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.564,
+      "result": {
+        "value": {
+          "key": "k114",
+          "version": 0,
+          "body": "synthetic response for k114",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.48,
+      "result": {
+        "value": {
+          "key": "k115",
+          "version": 0,
+          "body": "synthetic response for k115",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.512,
+      "result": {
+        "value": {
+          "key": "k116",
+          "version": 1,
+          "body": "synthetic response for k116",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.485,
+      "result": {
+        "value": {
+          "key": "k116",
+          "version": 2,
+          "body": "synthetic response for k116",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.533,
+      "result": {
+        "value": {
+          "key": "k117",
+          "version": 0,
+          "body": "synthetic response for k117",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.822,
+      "result": {
+        "value": {
+          "key": "k118",
+          "version": 0,
+          "body": "synthetic response for k118",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.541,
+      "result": {
+        "value": {
+          "key": "k119",
+          "version": 0,
+          "body": "synthetic response for k119",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.586,
+      "result": {
+        "value": {
+          "key": "k100",
+          "version": 2,
+          "body": "synthetic response for k100",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.475,
+      "result": {
+        "value": {
+          "key": "k100",
+          "version": 3,
+          "body": "synthetic response for k100",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.631,
+      "result": {
+        "value": {
+          "key": "k101",
+          "version": 0,
+          "body": "synthetic response for k101",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.821,
+      "result": {
+        "value": {
+          "key": "k102",
+          "version": 0,
+          "body": "synthetic response for k102",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.511,
+      "result": {
+        "value": {
+          "key": "k103",
+          "version": 0,
+          "body": "synthetic response for k103",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.507,
+      "result": {
+        "value": {
+          "key": "k104",
+          "version": 2,
+          "body": "synthetic response for k104",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.438,
+      "result": {
+        "value": {
+          "key": "k104",
+          "version": 3,
+          "body": "synthetic response for k104",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.543,
+      "result": {
+        "value": {
+          "key": "k105",
+          "version": 0,
+          "body": "synthetic response for k105",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.508,
+      "result": {
+        "value": {
+          "key": "k106",
+          "version": 0,
+          "body": "synthetic response for k106",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.56,
+      "result": {
+        "value": {
+          "key": "k107",
+          "version": 0,
+          "body": "synthetic response for k107",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.767,
+      "result": {
+        "value": {
+          "key": "k108",
+          "version": 2,
+          "body": "synthetic response for k108",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.504,
+      "result": {
+        "value": {
+          "key": "k108",
+          "version": 3,
+          "body": "synthetic response for k108",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.558,
+      "result": {
+        "value": {
+          "key": "k109",
+          "version": 0,
+          "body": "synthetic response for k109",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.522,
+      "result": {
+        "value": {
+          "key": "k110",
+          "version": 0,
+          "body": "synthetic response for k110",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.521,
+      "result": {
+        "value": {
+          "key": "k111",
+          "version": 0,
+          "body": "synthetic response for k111",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.58,
+      "result": {
+        "value": {
+          "key": "k112",
+          "version": 2,
+          "body": "synthetic response for k112",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.489,
+      "result": {
+        "value": {
+          "key": "k112",
+          "version": 3,
+          "body": "synthetic response for k112",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.534,
+      "result": {
+        "value": {
+          "key": "k113",
+          "version": 0,
+          "body": "synthetic response for k113",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.53,
+      "result": {
+        "value": {
+          "key": "k114",
+          "version": 0,
+          "body": "synthetic response for k114",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.553,
+      "result": {
+        "value": {
+          "key": "k115",
+          "version": 0,
+          "body": "synthetic response for k115",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.724,
+      "result": {
+        "value": {
+          "key": "k116",
+          "version": 2,
+          "body": "synthetic response for k116",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.626,
+      "result": {
+        "value": {
+          "key": "k116",
+          "version": 3,
+          "body": "synthetic response for k116",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.538,
+      "result": {
+        "value": {
+          "key": "k117",
+          "version": 0,
+          "body": "synthetic response for k117",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.59,
+      "result": {
+        "value": {
+          "key": "k118",
+          "version": 0,
+          "body": "synthetic response for k118",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.616,
+      "result": {
+        "value": {
+          "key": "k119",
+          "version": 0,
+          "body": "synthetic response for k119",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.551,
+      "result": {
+        "value": {
+          "key": "k100",
+          "version": 3,
+          "body": "synthetic response for k100",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.5,
+      "result": {
+        "value": {
+          "key": "k100",
+          "version": 4,
+          "body": "synthetic response for k100",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.556,
+      "result": {
+        "value": {
+          "key": "k101",
+          "version": 0,
+          "body": "synthetic response for k101",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 3.575,
+      "result": {
+        "value": {
+          "key": "k102",
+          "version": 0,
+          "body": "synthetic response for k102",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.584,
+      "result": {
+        "value": {
+          "key": "k103",
+          "version": 0,
+          "body": "synthetic response for k103",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.543,
+      "result": {
+        "value": {
+          "key": "k104",
+          "version": 3,
+          "body": "synthetic response for k104",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.5,
+      "result": {
+        "value": {
+          "key": "k104",
+          "version": 4,
+          "body": "synthetic response for k104",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.575,
+      "result": {
+        "value": {
+          "key": "k105",
+          "version": 0,
+          "body": "synthetic response for k105",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 2.585,
+      "result": {
+        "value": {
+          "key": "k106",
+          "version": 0,
+          "body": "synthetic response for k106",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    },
+    {
+      "kind": "live-query",
+      "elapsed_ms": 3.488,
+      "result": {
+        "value": {
+          "key": "k107",
+          "version": 0,
+          "body": "synthetic response for k107",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "tinylfu"
+      },
+      "stale_observed": false
+    }
+  ]
+}

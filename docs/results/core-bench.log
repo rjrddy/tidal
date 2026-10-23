@@ -1,0 +1,9 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/rjrddy/tidal/internal/cache
+cpu: Apple M2 Pro
+BenchmarkHit-10    	 4198951	       264.4 ns/op	      20 B/op	       0 allocs/op
+BenchmarkHit-10    	 4549222	       264.3 ns/op	      20 B/op	       0 allocs/op
+BenchmarkHit-10    	 4541397	       266.8 ns/op	      20 B/op	       0 allocs/op
+PASS
+ok  	github.com/rjrddy/tidal/internal/cache	4.536s

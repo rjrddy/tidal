@@ -1,0 +1,16 @@
+python3 scripts/check_go_format.py
+Go formatting clean
+go vet ./...
+.venv/bin/ruff check scripts
+All checks passed!
+.venv/bin/ruff format --check scripts
+3 files already formatted
+npm run lint --prefix apps/web
+
+> tidal-traffic-lab@0.1.0 lint
+> tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+
+Checking formatting...
+[warn] src/main.tsx
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.
+make: *** [lint] Error 1

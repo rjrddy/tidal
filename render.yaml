@@ -1,0 +1,10 @@
+# Prepared only. No account/service/deployment created. Origin remains synthetic.
+services:
+  - type: web
+    name: tidal-cache
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: TIDAL_TOKEN
+        generateValue: true

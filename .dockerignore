@@ -1,0 +1,7 @@
+.git
+.venv
+.cache
+bin
+apps/web/node_modules
+apps/web/dist
+docs/results/browser

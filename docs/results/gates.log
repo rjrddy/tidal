@@ -1,0 +1,34 @@
+python3 scripts/check_go_format.py
+Go formatting clean
+go vet ./...
+.venv/bin/ruff check scripts
+All checks passed!
+.venv/bin/ruff format --check scripts
+4 files already formatted
+npm run lint --prefix apps/web
+
+> tidal-traffic-lab@0.1.0 lint
+> tsc --noEmit && prettier --check src index.html package.json tsconfig.json
+
+Checking formatting...
+All matched files use Prettier code style!
+go test -race -count=1 -v ./... > docs/results/tests.log
+mkdir -p bin
+go build -trimpath -o bin/tidal ./cmd/tidal
+npm run build --prefix apps/web
+
+> tidal-traffic-lab@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.63 kB │ gzip:  0.38 kB
+dist/assets/index-COlZNlQZ.css   13.93 kB │ gzip:  3.52 kB
+dist/assets/index-poIchwZl.js   209.89 kB │ gzip: 65.85 kB
+✓ built in 484ms
+python3 scripts/trace_provenance.py > docs/results/trace-provenance.log
+./bin/tidal -bench > docs/results/bench-run.log
+go test ./internal/cache -run '^$' -bench Benchmark -benchmem -count=3 > docs/results/core-bench.log
