@@ -291,7 +291,7 @@ func (m *Manager) Snapshot() Stats {
 	s := m.stats
 	s.Resident = len(m.active.entries)
 	s.Inflight = len(m.flights)
-	s.Windows = append([]Window(nil), m.stats.Windows...)
+	s.Windows = append([]Window{}, m.stats.Windows...)
 	return s
 }
 func (m *Manager) Keys() []string { m.mu.Lock(); defer m.mu.Unlock(); return m.active.keys() }
