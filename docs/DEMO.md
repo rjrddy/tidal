@@ -10,6 +10,8 @@ Open http://127.0.0.1:8095 . The loopback demo token is `local-demo`. Replay lab
 
 In Live cache: fetch a new key, fetch it again, withhold an invalidation and change the source version, then fetch before expiry to observe a stale response. Deliver an invalidation, change the source and fetch again. Inject an outage and request a missing key: it must fail, then recover the origin and retry. Drive traffic to produce completed shadow-scoring windows. A real public-data key sequence does not imply real origin freshness metadata.
 
+Optional seed script for a running demo: `.venv/bin/python scripts/seed.py` sends seeded synthetic demand through the actual HTTP cache. `TIDAL_URL` selects the local server URL; no private data is read.
+
 Set `TIDAL_ADDR` or `TIDAL_TOKEN` via environment as needed. Only loopback accepts the public default token. External binding requires a private token and HTTPS termination at a proxy. Ctrl-C stops the server and its owned synthetic origin. Cache/origin state is disposable; there is no persistence guarantee.
 
 ## Ninety-second recording plan
