@@ -5,7 +5,7 @@ Scope: local Go cache with typed synthetic HTTP origin, owned policies/refresh/i
 | Gate | Evidence | Status |
 |---|---|---|
 | Owned hard core and explanation | internal/cache, DESIGN.md and ADRs | PASS |
-| One-command fresh clone | docs/results/fresh-clone/verification.json records actual make demo | Verification recorded when complete |
+| One-command fresh clone | docs/results/fresh-clone/verification.json records actual make demo | PASS |
 | UI shows live behavior | browser/review.json, actual HTTP receipts, screenshots and recording | PASS locally |
 | Unit/integration/reference/concurrency | race tests, independent LRU model, invalidation race, real HTTP origin | PASS |
 | Benchmarks saved | campaign.json, bench-run.log, core-bench.log, complete public trace provenance | PASS |

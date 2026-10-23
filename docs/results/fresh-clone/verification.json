@@ -1,0 +1,43 @@
+{
+  "head": "6a9330d24b42d0e23c010377e036047d9fdec89f",
+  "commands": [
+    "git clone --no-hardlinks",
+    "make setup lint test bench",
+    "make demo"
+  ],
+  "copied_ignored_artifacts": false,
+  "public_trace": "tracked licensed fixture, SHA256 verified",
+  "live_http_receipts": [
+    {
+      "elapsed_ms": 3.012,
+      "result": {
+        "value": {
+          "key": "k17",
+          "version": 0,
+          "body": "synthetic response for k17",
+          "max_age_ms": 1200
+        },
+        "hit": false,
+        "refresh_eligible": false,
+        "policy": "lru"
+      },
+      "stale_observed": false
+    },
+    {
+      "elapsed_ms": 0.001,
+      "result": {
+        "value": {
+          "key": "k17",
+          "version": 0,
+          "body": "synthetic response for k17",
+          "max_age_ms": 1200
+        },
+        "hit": true,
+        "refresh_eligible": false,
+        "policy": "lru"
+      },
+      "stale_observed": false
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,57 @@
+{
+  "scope": "real HTTP cache calls on seeded synthetic key demand",
+  "cache": {
+    "requests": 1024,
+    "hits": 695,
+    "origin_calls": 337,
+    "refreshes": 8,
+    "errors": 0,
+    "invalidated_loads": 0,
+    "switches": 1,
+    "selected": "tinylfu",
+    "resident": 95,
+    "inflight": 0,
+    "windows": [
+      {
+        "at": 256,
+        "selected": "lru",
+        "rates": {
+          "lfu": 0.52734375,
+          "lru": 0.5234375,
+          "tinylfu": 0.53125
+        },
+        "switched": false
+      },
+      {
+        "at": 512,
+        "selected": "lru",
+        "rates": {
+          "lfu": 0.8515625,
+          "lru": 0.8203125,
+          "tinylfu": 0.82421875
+        },
+        "switched": false
+      },
+      {
+        "at": 768,
+        "selected": "lru",
+        "rates": {
+          "lfu": 0.80859375,
+          "lru": 0.74609375,
+          "tinylfu": 0.83984375
+        },
+        "switched": false
+      },
+      {
+        "at": 1024,
+        "selected": "tinylfu",
+        "rates": {
+          "lfu": 0.84765625,
+          "lru": 0.63671875,
+          "tinylfu": 0.87109375
+        },
+        "switched": true
+      }
+    ]
+  }
+}
